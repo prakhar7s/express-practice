@@ -1,0 +1,4 @@
+Model.find() -> returns all
+Model.find({ onWhat }) -> find one
+Model.findById()
+Model.findOne({  onWhat })
