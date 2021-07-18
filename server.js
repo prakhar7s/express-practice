@@ -19,7 +19,7 @@ const app = express();
 
 // MongoDb
 mongoose.connect(
-  "mongodb+srv://new_user:7890@cluster0.2k3tn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  process.env.DATABASE_URL,
   { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false },
   () => {
     console.log("MongoDb connected");
